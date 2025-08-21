@@ -321,7 +321,7 @@ def main():
     archive_date = datetime.strptime(archive_time, '%Y-%m-%d %H:%M:%S')
 
     # ===== read from csv =====
-    with open('results_desensitized.csv', 'r', encoding='gb18030') as f:
+    with open('results_desensitized.csv', 'r', encoding='utf-8') as f:
         csv_reader = csv.reader(f)
         next(csv_reader)  # here we skip the first line
 
